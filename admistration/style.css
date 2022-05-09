@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  background-color: #035555;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin: 25px 10px 0;
+}
+
+.active {
+  width: 100%;
+  display: none;
+}
+
+.active a {
+  display: block;
+  width: 100%;
+}
+
+header button {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.template {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.template li h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.template li .date {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.template li .item {
+  line-height: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  height: 25px;
+  overflow: hidden;
+}
+
+.template li a {
+  color: black;
+  display: block;
+  margin: 10px 0;
+}
+
+.template li button {
+  background-color: #034444;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  -webkit-box-shadow: 3px 5px 1px #414141;
+          box-shadow: 3px 5px 1px #414141;
+}
+
+.template li button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-box-shadow: 2px 3px 1px #414141;
+          box-shadow: 2px 3px 1px #414141;
+}
+
+section {
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+section button {
+  margin-top: 20px;
+  background-color: #034444;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 5px 1px #414141;
+          box-shadow: 3px 5px 1px #414141;
+}
+
+section button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-box-shadow: 2px 3px 1px #414141;
+          box-shadow: 2px 3px 1px #414141;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+  top: 0;
+  padding: 1rem;
+  display: none;
+}
+
+.modal .modal__content {
+  max-width: 600px;
+  background-color: #fff;
+  margin: 50px auto;
+  height: auto;
+}
+
+.modal .modal__content h2 {
+  background-color: #fafaf8;
+  padding: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.modal .modal__content .modal__main {
+  padding: 1rem;
+}
+
+.modal .modal__content .modal__main input,
+.modal .modal__content .modal__main textarea {
+  display: block;
+  padding: 5px;
+  width: 100%;
+}
+
+.modal .modal__content .modal__main h3 {
+  margin-top: 20px;
+}
+
+.modal .modal__content .modal__main button {
+  margin-top: 20px;
+  background-color: #034444;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 5px 1px #414141;
+          box-shadow: 3px 5px 1px #414141;
+}
+
+.modal .modal__content .modal__main button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-box-shadow: 2px 3px 1px #414141;
+          box-shadow: 2px 3px 1px #414141;
+}
+
+footer {
+  width: 100%;
+  background-color: #023f3f;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .links {
+    display: none;
+  }
+  header button {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../admistration/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>description Administration</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        
+        <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+        <div class="links">
+        <a href="#">Home</a>
+        <a href="#">Packages</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Blog</a>
+        <a href="#">FAQs</a>
+        <a href="#">Reviews</a>
+        </div>
+
+        <div class="active">
+            <a href="#">Home</a>
+            <a href="#">Packages</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQs</a>
+            <a href="#">Reviews</a>
+            </div>
+
+    </header>
+
+    <main class="template">
+        <li>
+            <li>
+                <h1 class="title name"></h1>
+                <p class="date">29 March 2022</p>
+                <p class="item short__descraption"> </li>
+            <button class="update__btn" style="padding: 5px 10px;">
+                <i class="fa-solid fa-pen"></i>
+                Update
+            </button>
+            <button class="delate__btn" style="padding: 5px 10px; color: white; background-color: red;">
+                <i class="fa-solid fa-trash-can"></i>
+                Delete
+            </button>
+        </li>
+    </main>
+
+<form action="" class="form">
+    <div class="modal">
+        <div class="modal__content">
+            <h2>Update post</h2>
+
+            <div class="modal__main">
+                <h3>Title</h3>
+                <input type="text" placeholder="Title..." class="name__post">
+                <h3>Content</h3>
+                <textarea placeholder="Add Content" class="update__Post"></textarea>
+                <button class="sent-newpost">Confirm Update</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+    <footer>
+        <a href="https://instagram.com">
+            <i class="fa-brands fa-instagram"></i> 
+            Instagram
+        </a>
+        <a href="https://facebook.com">
+            <i class="fa-brands fa-facebook"></i>
+            Facebook
+        </a>
+        <a href="https://t.me">
+            <i class="fa-brands fa-telegram"></i>
+            Telegram
+        </a>
+    </footer>
+    <script src="../backend/utils.js"></script>
+    <script src="./adminDescription.js"></script>
+</body>
+</html>

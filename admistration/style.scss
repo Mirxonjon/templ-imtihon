@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(3, 85, 85);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 25px 10px 0;
+}
+
+.active {
+    width: 100%;
+    display: none;
+}
+
+.active a {
+    display: block;
+    width: 100%;
+}
+
+header button {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.template {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.template li h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.template li .date {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.template li .item {
+    line-height: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    height: 25px;
+    overflow: hidden;
+    // text-overflow: ellipsis;
+}
+
+.template li a {
+    color: black;
+    display: block;
+    margin: 10px 0;
+}
+
+.template li button {
+    background-color: rgb(3, 68, 68);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    box-shadow: 3px 5px 1px rgb(65, 65, 65);
+}
+
+.template li button:active {
+    transform: scale(.98);
+    box-shadow: 2px 3px 1px rgb(65, 65, 65);
+}
+
+section {
+    max-width: 770px;
+    margin: 0 auto;
+
+    button {
+        margin-top: 20px;
+        background-color: rgb(3, 68, 68);
+        color: white;
+        font-weight: bolder;
+        border: none;
+        padding: 5px;
+        width: 100px;
+        height: 35px;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 3px 5px 1px rgb(65, 65, 65);
+    }
+
+    button:active {
+        transform: scale(.98);
+        box-shadow: 2px 3px 1px rgb(65, 65, 65);
+    }
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba($color: #000000, $alpha: .7);
+    z-index: 5;
+    top: 0;
+    padding: 1rem;
+    display: none;
+
+    .modal__content {
+        max-width: 600px;
+        background-color: #fff;
+        margin: 50px auto;
+        height: auto;
+
+
+        h2 {
+            background-color: rgb(250, 250, 248);
+            padding: 1rem;
+            border-bottom: 1px solid gray;
+        }
+
+        .modal__main {
+            padding: 1rem;
+
+            input,
+            textarea {
+                display: block;
+                padding: 5px;
+                width: 100%;
+            }
+
+            h3 {
+                margin-top: 20px;
+            }
+
+            button {
+                margin-top: 20px;
+                background-color: rgb(3, 68, 68);
+                color: white;
+                font-weight: bolder;
+                border: none;
+                padding: 5px;
+                width: 100px;
+                height: 35px;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: 3px 5px 1px rgb(65, 65, 65);
+            }
+        
+            button:active {
+                transform: scale(.98);
+                box-shadow: 2px 3px 1px rgb(65, 65, 65);
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(2, 63, 63);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .links {
+        display: none;
+    }
+
+    header button {
+        display: block;
+    }
+}

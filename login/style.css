@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+section{
+    margin:40vh auto 0;
+    width: 300px;
+    
+}
+h1{
+    width: 75px;
+    margin: 0 auto 20px;
+}
+input{
+    width: 300px;
+
+    display: block;
+    margin: 5px auto;
+    padding: 5px 10px;
+    height: 30px;
+
+
+}
+button{
+    width: 300px;
+    height: 30px;
+    display: block;
+    margin:auto;
+    
+    
+}
+@media only screen and (max-width: 340px) {
+    body{
+        width: 100%;
+    }
+    section{
+        width: 250px;
+    }
+   button, input{
+        width: 250px;
+    }
+
+  }
